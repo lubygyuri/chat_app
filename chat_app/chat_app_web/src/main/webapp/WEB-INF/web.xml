@@ -1,0 +1,15 @@
+<web-app>
+  <display-name>Chat App</display-name>
+
+  <context-param>
+    <param-name>outer-pages</param-name>
+    <param-value>
+      /css/style.css,
+      /index.jsp,
+      /pages/login.jsp,
+      /pages/register.jsp,
+      /LoginController,
+      /RegisterController
+    </param-value>
+  </context-param>
+</web-app>

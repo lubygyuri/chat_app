@@ -1,0 +1,11 @@
+hu\alkfejl\model\ChatRoom.class
+hu\alkfejl\dao\RuleDAOImpl.class
+hu\alkfejl\dao\ChatUserDAO.class
+hu\alkfejl\dao\ChatUserDAOImpl.class
+hu\alkfejl\dao\ChatRoomDAO.class
+hu\alkfejl\model\Rule.class
+hu\alkfejl\dao\ChatRoomDAOImpl.class
+hu\alkfejl\model\Gender.class
+hu\alkfejl\model\ChatUser.class
+hu\alkfejl\dao\RuleDAO.class
+hu\alkfejl\config\Configuration.class

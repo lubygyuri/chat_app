@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: #eac7c7 !important;*/
+}
+
+.centered-container {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.login-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form h4 {
+    margin-bottom: 40px;
+}
+
+.login-form .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="number"],
+.login-form input[type="password"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.flex-row button,
+.flex-row a {
+    width: 100%;
+    margin: 5px;
+}
+
+.register-genderclass {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.register-genderclass input,
+.register-genderclass label {
+    margin: 0 !important;
+}
+
+.myself-card h3,
+.room-details-card h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.myself-card ul,
+.room-details-card ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.myself-card ul li,
+.room-details-card ul li {
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myself-card ul li p,
+.room-details-card ul li p {
+    margin: 0;
+    text-align: right;
+}
+
+.users-card,
+.rooms-card {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.myself-card ul li span,
+.room-details-card ul li span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.rooms-card form input {
+    width: 100%;
+}
+
+.room-details-card form,
+.myself-card form {
+    margin: 0;
+}
+
+.room-details-card {
+    max-height: 600px;
+}
+
+.room-details-card ul {
+    overflow-y: auto;
+}
+
+.messages-container {
+    height: 100%;
+    max-height: 542px;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.incoming-bubble,
+.outgoing-bubble {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.outgoing-bubble {
+    justify-content: flex-end;
+}
+
+.incoming-bubble p {
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+    float: left;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 15px;
+    max-width: 60%;
+}
+
+.outgoing-bubble p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: justify;
+    float: right;
+    padding: 5px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #2361dd;
+    color: #fff;
+    margin-bottom: 15px;
+    max-width: 60%;
+}
+
+.name-in-bubble {
+    font-weight: bold;
+    margin-right: 15px;
+}

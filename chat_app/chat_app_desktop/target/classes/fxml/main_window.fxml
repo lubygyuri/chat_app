@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.controller.MainWindowController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fájl">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onExit" text="Kilépés" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Hozzáadás">
+            <items>
+              <MenuItem onAction="#onAddNewRoom" mnemonicParsing="false" text="Szoba Hozzáadása" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+            <Tab text="Chat Szobák">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="chatRoomTable" layoutX="14.0" layoutY="14.0" prefHeight="316.0" prefWidth="571.0">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="roomNameColumn" prefWidth="75.0" text="Szoba Neve" />
+                              <TableColumn fx:id="roomCategoryColumn" prefWidth="75.0" text="Kategória" />
+                              <TableColumn fx:id="chatRoomActionsColumn" prefWidth="75.0" text="Műveletek" />
+                           </columns>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Felhasználók">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="chatUserTable" layoutX="14.0" layoutY="14.0" prefHeight="316.0" prefWidth="571.0">
+                          <columns>
+                            <TableColumn fx:id="nicknameColumn" prefWidth="75.0" text="Becenév" />
+                            <TableColumn fx:id="ageColumn" prefWidth="75.0" text="Életkor" />
+                              <TableColumn fx:id="genderColumn" prefWidth="75.0" text="Neme" />
+                              <TableColumn fx:id="interestColumn" prefWidth="75.0" text="Érdeklődési kör" />
+                              <TableColumn fx:id="chatUserActionsColumn" prefWidth="75.0" text="Műveletek" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
