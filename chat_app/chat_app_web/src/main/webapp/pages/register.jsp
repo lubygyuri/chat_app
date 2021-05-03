@@ -13,9 +13,9 @@
                     </div>
                 </c:if>
                 <div class="form-group">
-                    <input class="form-control" name="nickname" type="text" placeholder="Felhasználónév">
-                    <input class="form-control" name="password" type="password" placeholder="Jelszó">
-                    <input class="form-control" name="passwordAgain" type="password" placeholder="Jelszó mégegyszer">
+                    <input class="form-control" name="nickname" type="text" placeholder="Felhasználónév" required>
+                    <input class="form-control" name="password" type="password" placeholder="Jelszó" required>
+                    <input class="form-control" name="passwordAgain" type="password" placeholder="Jelszó mégegyszer" required>
                     <input class="form-control" name="age" type="number" placeholder="Életkor">
                     <input class="form-control" name="interest" type="text" placeholder="Érdeklődési kör">
                     <div class="flex-row p-2 h-15">

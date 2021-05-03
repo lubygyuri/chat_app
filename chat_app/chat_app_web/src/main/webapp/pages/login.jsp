@@ -20,8 +20,8 @@
                     </c:if>
                 </c:if>
                 <div class="form-group">
-                    <input class="form-control" name="nickname" type="text" placeholder="Felhasználónév">
-                    <input class="form-control" name="password" type="password" placeholder="Jelszó">
+                    <input class="form-control" name="nickname" type="text" placeholder="Felhasználónév" required>
+                    <input class="form-control" name="password" type="password" placeholder="Jelszó" required>
                     <div class="flex-row">
                         <button class="btn btn-primary" type="submit">Bejelentkezés</button>
                         <a href="${pageContext.request.contextPath}/pages/register.jsp" class="btn btn-success">Regisztráció</a>
